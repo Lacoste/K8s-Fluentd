@@ -10,7 +10,6 @@ data:
       @type tail
       path /var/log/containers/*.log
       pos_file /var/log/fluentd-containers.log.pos
-      time_format %Y-%m-%dT%H:%M:%S.%NZ
       tag kubernetes.*
       <parse>
         @type json
